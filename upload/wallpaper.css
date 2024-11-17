@@ -1,0 +1,67 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Animasi Gradien */
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #8fd3f4);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Animasi Gradien */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Kontainer Konten */
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Tombol */
+.button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #ffffff;
+    transform: scale(1.1);
+}
